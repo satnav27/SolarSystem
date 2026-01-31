@@ -1,0 +1,361 @@
+body {
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+  position: relative; /* Needed for absolute positioning of children */
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.sun img {
+  width: 200px;
+  height: 200px;
+}
+
+.mercury {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(85px);
+  display: flex;
+}
+
+.mercury img {
+  width: 30px;
+  height: 30px;
+}
+
+.venus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(130px);
+  display: flex;
+}
+
+.venus img {
+  width: 32px;
+  height: 32px;
+}
+
+.earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(170px); /* 300px from center */
+  display: flex;
+}
+
+.earth img {
+  width: 45px;
+  height: 45px;
+}
+
+.mars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(215px); /* 350px from center */
+  display: flex;
+}
+
+.mars img {
+  width: 40px;
+  height: 40px;
+}
+
+.jupiter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(320px);
+  display: flex;
+}
+
+.jupiter img {
+  width: 100px;
+  height: 100px;
+}
+
+.saturn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(420px);
+  display: flex;
+}
+
+.saturn img {
+  width: 80px;
+  height: 80px;
+}
+
+.uranus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(500px);
+  display: flex;
+}
+
+.uranus img {
+  width: 65px;
+  height: 65px;
+}
+
+.neptune {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(580px);
+  display: flex;
+}
+
+.neptune img {
+  width: 70px;
+  height: 70px;
+}
+
+/* ORBIT PATHS */
+
+.mercury-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.venus-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.earth-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 340px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.mars-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 430px;
+  height: 430px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.jupiter-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+  height: 640px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.saturn-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 840px;
+  height: 840px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.uranus-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.neptune-orbit-path {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1160px;
+  height: 1160px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* ANIMATION */
+
+.mercury-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: mercury-orbit 1s linear infinite;
+}
+
+@keyframes mercury-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.venus-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: venus-orbit 2.6s linear infinite;
+}
+
+@keyframes venus-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.earth-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: earth-orbit 4.1s linear infinite;
+}
+
+@keyframes earth-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.mars-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: mars-orbit 7.8s linear infinite;
+}
+
+@keyframes mars-orbit {
+  0% {
+    transformm: translate(-50%, 50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, 50%) rotate(360deg);
+  }
+}
+
+.jupiter-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: jupiter-orbit 49s linear infinite;
+}
+
+@keyframes jupiter-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.saturn-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: saturn-orbit 123s linear infinite;
+}
+
+@keyframes saturn-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.uranus-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: uranus-orbit 350s linear infinite;
+}
+
+@keyframes uranus-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.neptune-orbit-anim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: neptune-orbit 688s linear infinite;
+}
+
+@keyframes neptune-orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
