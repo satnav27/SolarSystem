@@ -228,61 +228,61 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: mercury-orbit 1s linear infinite;
+  /* animation: mercury-orbit 1s linear infinite; */
 }
 
-@keyframes mercury-orbit {
+/* @keyframes mercury-orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
+} */
 
 .venus-orbit-anim {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: venus-orbit 2.6s linear infinite;
+  /* animation: venus-orbit 2.6s linear infinite; */
 }
 
-@keyframes venus-orbit {
+/* @keyframes venus-orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
+} */
 
 .earth-orbit-anim {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: earth-orbit 4.1s linear infinite;
+  /* animation: earth-orbit 4.1s linear infinite; */
 }
 
-@keyframes earth-orbit {
+/* @keyframes earth-orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
+} */
 
 .mars-orbit-anim {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: mars-orbit 7.8s linear infinite;
+  /* animation: mars-orbit 7.8s linear infinite; */
 }
 
-@keyframes mars-orbit {
+/* @keyframes mars-orbit {
   0% {
     transformm: translate(-50%, 50%) rotate(0deg);
   }
@@ -290,72 +290,72 @@ body {
   100% {
     transform: translate(-50%, 50%) rotate(360deg);
   }
-}
+} */
 
 .jupiter-orbit-anim {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: jupiter-orbit 49s linear infinite;
+  /* animation: jupiter-orbit 49s linear infinite; */
 }
 
-@keyframes jupiter-orbit {
+/* @keyframes jupiter-orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
+} */
 
 .saturn-orbit-anim {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: saturn-orbit 123s linear infinite;
+  /* animation: saturn-orbit 123s linear infinite; */
 }
 
-@keyframes saturn-orbit {
+/* @keyframes saturn-orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
+} */
 
 .uranus-orbit-anim {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: uranus-orbit 350s linear infinite;
+  /* animation: uranus-orbit 350s linear infinite; */
 }
 
-@keyframes uranus-orbit {
+/* @keyframes uranus-orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
+} */
 
 .neptune-orbit-anim {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: neptune-orbit 688s linear infinite;
+  /* animation: neptune-orbit 688s linear infinite; */
 }
 
-@keyframes neptune-orbit {
+/* @keyframes neptune-orbit {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-}
+} */
